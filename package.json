@@ -1,0 +1,33 @@
+{
+  "name": "es2015-nodejs-exercices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplonco/es2015-nodejs-exercices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simplonco/es2015-nodejs-exercices/issues"
+  },
+  "homepage": "https://github.com/simplonco/es2015-nodejs-exercices#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-node": "^4.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1"
+  }
+}

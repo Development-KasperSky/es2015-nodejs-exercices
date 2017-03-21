@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h2>Personnalités célébres</h2>
+            <p>Quelques personnes célébre pour leurs actions durant leur vie.</p>
+        </div>
+
+        <div class="list-group">
+          <!-- loop over blog posts and render them -->
+          <% users.map((user) => { %>
+            <a href="/user/<%= user.id %>" class="list-group-item">
+              <p class="list-group-item-text"><%= user.firstName %> <%= user.lastName %></p>
+            </a>
+          <% }) %>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+</html>

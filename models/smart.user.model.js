@@ -17,7 +17,12 @@ class SmartUserModel extends UserModel {
   }
 
   getRole() {
+    if(this.role.length < 2) return this.role;
     return this.role.charAt(0).toUpperCase() + this.role.substring(1);
+  }
+
+  getUrl() {
+    return `/user/${this.id}`;
   }
 
 }

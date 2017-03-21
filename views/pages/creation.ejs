@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+        <h1>Création</h1>
+
+        <form action="/creation" method="post">
+          <div class="form-group">
+            <label for="inputFirstName">First name</label>
+            <input type="text" name="firstName" class="form-control" id="inputFirstName" placeholder="First name">
+          </div>
+          <div class="form-group">
+            <label for="inputLastName">Last name</label>
+            <input type="text" name="lastName" class="form-control" id="inputLastName" placeholder="Last name">
+          </div>
+          <div class="form-group">
+            <label for="inputRole">Role</label>
+            <input type="text" name="role" class="form-control" id="inputRole" placeholder="Role">
+          </div>
+          <div class="form-group">
+            <label for="inputBirthYear">Birth year</label>
+            <input type="number" name="birthYear" class="form-control" id="inputBirthYear" placeholder="BirthYear">
+          </div>
+          <div class="form-group">
+            <label for="inputDescription">Description</label>
+            <input type="text" name="description" class="form-control" id="inputDescription" placeholder="Description">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+</html>

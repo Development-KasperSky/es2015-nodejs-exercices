@@ -1,10 +1,7 @@
-const UserList = require('../models/user.list');
-const data = require('../data/users.mock');
-
-const userList = new UserList(data);
+const model = require('../models');
 
 module.exports = function(req, res) {
-  const user = userList.getItemById(req.params.id);
+  const user = model.userList.getItemById(req.params.id);
   res.render('pages/user', {
     user
   });

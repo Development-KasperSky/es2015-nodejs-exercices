@@ -1,6 +1,7 @@
-var express = require('express');
-var app = express();
-var userController = require('./controllers/user');
+const express = require('express');
+const app = express();
+const userController = require('./controllers/user');
+const homeController = require('./controllers/home');
 
 // // Definissez ejs comme 'view engine'
 app.set('view engine', 'ejs');
@@ -10,9 +11,7 @@ app.set('view engine', 'ejs');
 
 // Pour la route ci-dessous ('/'), utilisez 'res.render' pour charger le template ejs désiré :
 // index page
-app.get('/', function(req, res) {
-  res.render('pages/index');
-});
+app.get('/', homeController);
 
 app.get('/user/:id', userController);
 

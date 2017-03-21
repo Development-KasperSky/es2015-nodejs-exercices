@@ -1,4 +1,4 @@
-const UserModel = require('./user.model');
+const UserModel = require('./smart.user.model');
 
 class UserList {
 

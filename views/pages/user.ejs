@@ -12,7 +12,9 @@
     <main>
         <div class="jumbotron">
             <h1><%= user.getName() %></h1>
-            <p><%= user.firstName %></p>
+            <h4><span class="glyphicon glyphicon-lamp"></span><em><%=user.role %></em></h4>
+            <p><%= user.description %></p>
+            <p><em><%= user.getSmartSentence() %> <%= user.getBirthSentence() %></em></p>
         </div>
     </main>
 

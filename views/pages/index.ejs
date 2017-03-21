@@ -11,9 +11,18 @@
 
     <main>
         <div class="jumbotron">
-            <h1>Coucou</h1>
-            <p>Je suis une page d'accueuil en ejs</p>
-            <p>J'aimerais qu'on affiche tous les utilisateur ici !</p>
+            <h2>Personnalités célébres</h2>
+            <p>Quelques personnes célébre pour leurs actions durant leur vie.</p>
+        </div>
+
+        <div class="list-group">
+          <!-- loop over blog posts and render them -->
+          <% users.map((user) => { %>
+            <a href="/user/<%= user.id %>" class="list-group-item">
+              <h4 class="list-group-item-heading"><%= user.getName() %></h4>
+              <p class="list-group-item-text"><%= user.getRole() %> - Borned on <%= user.birthYear %></p>
+            </a>
+          <% }) %>
         </div>
     </main>
 
